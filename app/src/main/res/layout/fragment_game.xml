@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#21447C"
+    android:background="@color/dark_blue"
     tools:context=".ui.GameFragment">
 
     <nl.dionsegijn.konfetti.xml.KonfettiView
         android:id="@+id/konfettiView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_height="match_parent" />
 
     <ImageView
         android:id="@+id/textViewTitle"
@@ -27,7 +25,7 @@
         android:id="@+id/textViewRestartGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restart Game"
+        android:text="@string/game_restart"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@id/buttonRestartGame"/>
@@ -36,7 +34,7 @@
         android:id="@+id/textViewRestartCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restart Counter"
+        android:text="@string/game_restart_counter"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/buttonRestartCounter" />
@@ -48,7 +46,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:background="#34b1e3"
+        android:background="@color/blue"
         android:padding="10dp"
         android:layout_marginBottom="90dp"
         app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
@@ -80,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Player1"
+            android:text="@string/game_player_one"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageViewTurnRed" />
@@ -110,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:text="Player2"
+            android:text="@string/game_player_one"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="@id/imageViewTurnYellow"
             app:layout_constraintEnd_toStartOf="@id/imageViewTurnYellow" />

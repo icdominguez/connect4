@@ -4,16 +4,20 @@
     <string name="home_button_play">Play</string>
     <string name="home_button_info">Info</string>
     <string name="home_developed_by">Developed by icd</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="game_win_red">Red wins</string>
     <string name="game_win_yellow">Yellow wins</string>
+    <string name="game_restart">Restart game</string>
+    <string name="game_restart_counter">Restart Counter</string>
+    <string name="game_player_one">Player1</string>
+    <string name="game_player_two">Player2</string>
 
-    <string name="info_presentation">Hi! My name is Ismael. I have more than 3 years of experience in Software develpment, last 2 as an Android Developer. This is the app for the first weekly Challenge by MoureDev, you can review the code on the github button. Hope you like it as much as I enjoyed developing it. Waiting for the second challenge ...</string>
+    <string name="info_presentation">Hi! My name is Ismael. I have more than 3 years of experience in Software development, last 2 as an Android Developer. This is the app for the first monthly Challenge by MoureDev, you can review the code on the github button. Hope you like it as much as I enjoyed developing it. Waiting for the second challenge ...</string>
     <string name="info_url_github_repository">https://github.com/icordondominguez/connectfour</string>
 
     <string name="win_red_wins">Red wins</string>
     <string name="win_yellow_wins">Yellow wins</string>
-    <string name="win_button_accept">Aceptar</string>
+    <string name="win_button_accept">Accept</string>
+
+    <string name="info_github_url">https://github.com/icordondominguez/Connect4</string>
 </resources>

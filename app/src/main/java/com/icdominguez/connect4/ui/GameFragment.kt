@@ -146,6 +146,8 @@ class GameFragment : Fragment() {
 
         } while (imageViewCounter < 68)
 
+        arrayDiagonals.sort()
+
         for(i in 0 until arrayDiagonals.size) {
             if((binding.linearLayoutTable).findViewWithTag<ImageView>("imageView${arrayDiagonals[i]}") != null) {
                 if((binding.linearLayoutTable).findViewWithTag<ImageView>("imageView${arrayDiagonals[i]}").drawable.constantState == requireActivity().getDrawable(drawable)!!.constantState) {
@@ -161,7 +163,7 @@ class GameFragment : Fragment() {
             }
         }
 
-        if(win) updateBackgroundWin(arrayWins.sorted() as ArrayList<Int>)
+        if(win) updateBackgroundWin(arrayWins)
 
         return win
     }
@@ -179,7 +181,7 @@ class GameFragment : Fragment() {
             } else {
                 break
             }
-            imageViewCounter -= 9
+            imageViewCounter -= 11
         } while (imageViewCounter >= 11)
 
         imageViewCounter = imageView
@@ -193,7 +195,7 @@ class GameFragment : Fragment() {
                 break
             }
 
-            imageViewCounter += 9
+            imageViewCounter += 11
 
         } while (imageViewCounter < 68)
 

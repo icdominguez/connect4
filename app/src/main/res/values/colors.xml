@@ -8,6 +8,9 @@
     <color name="black">#FFFFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF0000</color>
+    <color name="light_red">#de2847</color>
     <color name="yellow">#FFEB3B</color>
-    <color name="blue">#03A9F4</color>
+    <color name="blue">#34b1e3</color>
+    <color name="dark_blue">#21447C</color>
+    <color name="board_background">#4B7DBA</color>
 </resources>

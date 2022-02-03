@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Red Wins"
+            android:text="@string/game_win_red"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/linearLayoutVictory"
             app:layout_constraintStart_toStartOf="@+id/linearLayoutVictory"

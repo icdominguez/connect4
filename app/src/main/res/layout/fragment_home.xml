@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#21447C"
+    android:background="@color/dark_blue"
     tools:context=".ui.HomeFragment">
 
     <LinearLayout
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="16dp"
-            android:backgroundTint="#34b1e3"
+            android:backgroundTint="@color/blue"
             android:text="@string/home_button_play"
             app:layout_constraintBottom_toTopOf="@id/buttonInfo" />
 
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:text="@string/home_button_info"
-            android:backgroundTint="#de2847"
+            android:backgroundTint="@color/light_red"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

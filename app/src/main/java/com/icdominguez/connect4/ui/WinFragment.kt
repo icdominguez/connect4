@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import com.icdominguez.connect4.R
 import com.icdominguez.connect4.databinding.FragmentWinBinding
@@ -30,11 +31,15 @@ class WinFragment : DialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var color = if(arguments?.getInt("TURN") == 1) "#FF0000" else "#FFEB3B"
+        var color = if(arguments?.getInt("TURN") == 1) {
+            ContextCompat.getColor(requireActivity(), R.color.red)
+        } else {
+            ContextCompat.getColor(requireActivity(), R.color.yellow)
+        }
 
-        binding.linearLayoutVictory.setBackgroundColor(Color.parseColor(color))
+        binding.linearLayoutVictory.setBackgroundColor(color)
 
-        if(color == "#FF0000") {
+        if(color == ContextCompat.getColor(requireActivity(), R.color.red)) {
             binding.textViewPlayerWhoWins.text = getString(R.string.game_win_red)
         } else {
             binding.textViewPlayerWhoWins.text = getString(R.string.game_win_yellow)

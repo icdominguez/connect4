@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#21447C"
+    android:background="@color/dark_blue"
     tools:context=".ui.InfoFragment">
 
     <ImageView

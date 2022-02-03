@@ -24,7 +24,7 @@ class InfoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.imageViewGitHub.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/icordondominguez/Connect4")))
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.info_github_url))))
         }
     }
 }
